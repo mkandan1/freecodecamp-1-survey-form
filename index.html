@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>Survey Form: freeCodeCamp</title>
+</head>
+<body>
+    <h1 id="title">LinkedIn Learning Course Survey</h1>
+    <p id="description">Please help us to improve our course</p>
+
+    <form id="survey-form" method="post" action="#">
+        <fieldset>
+            <!-- Name -->
+            <label for="name" id="name-label">
+                Name
+            </label>
+                <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+            <!-- Email -->
+            <label for="email" id="email-label">
+                Email
+            </label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            <!-- Number -->
+            <label for="number" id="number-label">
+                Age (Optional)
+            </label>
+                <input type="number" name="survey-form" min="13" max="100" id="number" placeholder="Enter your Age">
+        
+            <!-- Dropdown -->
+            <label for="course-list">
+                <span>Which course you have completed?</span>
+                <select name="course-list" id="dropdown">
+                    <option value="">Select an Option</option>
+                    <option value="frontend-course">Frontend Development</option>
+                    <option value="backend-course">Backend Development</option>
+                    <option value="fullstack-course">Fullstack Development</option>
+                    <option value="qa-course">QA Course</option>
+                </select>
+            </label>
+            <!-- Radio -->
+            <span class="choice">How was the course?</span>
+            <label for="easy"><input type="radio" name="course-level" id="easy" value="easy" class="inline"> Easy</label>
+            <label for="normal"><input type="radio" name="course-level" id="normal" value="normal" class="inline"> Normal</label>
+            <label for="hard"><input type="radio" name="course-level" id="hard" value="hard" class="inline"> Hard</label>
+            <!-- Checkbox -->
+            <span class="choice">What would like to see improved?</span>
+            <label for="video-quality"><input type="checkbox" name="suggestion" id="video-quality" value="video-quality" class="inline"> Video quality</label>
+            <label for="challenges"><input type="checkbox" name="suggestion" id="challenges" value="challenges" class="inline"> Challenges</label>
+            <label for="projects"><input type="checkbox" name="suggestion" id="projects" value="projects" class="inline"> Projects</label>
+            <!-- Textarea -->
+            <label for="comment">Any comments or suggestions?</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Write comment here if you want to say something..."></textarea>
+        </fieldset>
+        <input type="submit" id="submit" name="survey-form" value="Submit">
+    </form>
+
+    <footer>
+        <p>Assignment 1 out of 5 for Responsive Web Design</p>
+        <p>Made with ❤️ by <a href="https://www.freecodecamp.org/mkandan">Mani Kandan</a></p>
+    </footer>
+</body>
+</html>

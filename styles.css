@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Raleway:ital,wght@0,400;0,500;1,700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #15151a;
+    color: #fff;
+}
+
+h1, p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin: 2em 0 0;
+}
+
+p {
+    margin: 1em 0;
+}
+
+h1, label, span {
+    font-family: "Inter";
+}
+p, legend {
+    font-family: 'Raleway';
+}
+
+legend {
+    font-weight: 500;
+}
+
+label, span {
+    margin: 20px 0 8px 0;
+    font-size: 1rem;
+}
+
+input, select, textarea {
+    width: 90%;
+    height: 3vh;
+    font-size: .80rem;
+    outline: none;
+    font-family: 'Inter';
+}
+
+select {
+    height: 3.5vh;
+}
+
+.optional {
+    display: inline-block;
+    font-size: .76rem;
+    margin-left: 3px;
+}
+
+.inline {
+    width: unset;
+    font-size: .85rem;
+    vertical-align: middle;
+    margin: 0;
+}
+
+form{
+    width: 80vw;
+    margin: 2em auto;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+fieldset {
+    margin: 1em 0 0;
+    padding: 1em 0 2em 1em;
+    border: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 2em;
+}
+
+fieldset:first-of-type{
+    margin-top: 4em;
+}
+
+#submit {
+    width: 100%;
+    height: 4vh;
+    color: #fff;
+    outline: none;
+    border: none;
+    background-color: #052a87;
+}
+
+label, span, select {
+    display: block;
+}
+
+textarea {
+    padding: 5px 0 0 5px;
+    height: 8vh;
+}
+
+footer {
+    margin-top: 4em;
+}
+
+
+footer > p:last-child{
+    margin-top: 1.2em;
+    margin-bottom: 1.3em;
+}
+
+a {
+    color: #fff;
+    font-weight: 500;
+}
